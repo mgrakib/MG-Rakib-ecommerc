@@ -207,6 +207,7 @@ nav {
     opacity: 0;
     transition: all .2s linear;
     visibility: hidden;
+    z-index: 5;
 }
 .navigation .out-ul .out-li:hover .ins-ul, .navigation .out-ul .out-li:hover .shop-insid-row{
     opacity: 1;
@@ -252,6 +253,7 @@ nav {
     opacity: 0;
     visibility: hidden;
     transition: all .2s linear;
+    z-index: 5;
 }
 
 
@@ -317,7 +319,6 @@ nav {
 
 #content {
     width: 100%;
-    height: 100vh;
 }
 
 #sidbar-section {
@@ -390,8 +391,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 80px;
+    padding: 0px 80px;
     position: relative;
+    
 }
 
 #hero-section::after,#hero-section::before  {
@@ -410,12 +412,12 @@ nav {
 }
 
 #hero-section::after {
-    content: "\f099";
+    content: "\f015";
     left: 10px;    
 }
 
 #hero-section::before {
-    content: "";
+    content: "\f015";
     right: 10px;
 }
 
@@ -465,4 +467,33 @@ nav {
     background-size: cover;
 
 }
-/* ------------------- hero image -------- */
+
+/* ------------------ bannar ------------------ */
+#bannar {
+    height: 150px;
+    width: 100%;
+    margin: 40px 0;
+    background-image: url(../images/banar.webp);
+    background-size: cover;
+    background-blend-mode:exclusion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#bannar p span {
+    color: #EE403D;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#bannar p span:hover {
+    color: #636362;
+    
+}
+
+/* ----------------------fetures--------------- */
+#
