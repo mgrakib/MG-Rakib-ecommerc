@@ -11,8 +11,16 @@ body{
 
 .container {
     padding: 0 20px;
+    width: 100%;
 }
 
+#row {
+    display: flex;
+}
+/* ------------------------- for all part end---------------- */
+
+
+/* ------------------top section-------------- */
 .top {
     display: flex;
     font-size: 14px;
@@ -20,6 +28,9 @@ body{
     background-color: #EE403D;
     color: white;
     position: relative;
+}
+.top #row {
+    justify-content: center;
 }
 
 .top::after {
@@ -46,13 +57,13 @@ body{
 }
 
 .top .discount-add {
-    margin-left: auto;
+    /* margin:  0 auto; */
     line-height: 16px;
     padding: 0 10px;
 }
 
 .top .shoping {
-    margin-right: auto;
+    /* margin-right: auto; */
     border-left: 1px solid white;
     line-height: 16px;
     padding: 0 15px;
@@ -66,4 +77,59 @@ body{
 
 .top .shoping:hover{
     text-decoration: underline;
+}
+
+
+/* ---------------------- nav section --------------------------------- */
+
+nav {
+    padding: 10px 0px;
+    background-color: #F5F6F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.accound-about {
+    flex-basis: 50%;
+}
+.accound-about ul li {
+    display: inline-block;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.accound-about ul li a {
+    text-decoration: none;
+    color: #7A7A7A;
+}
+.accound-about ul li:hover a {
+    color: #ec499a;
+}
+
+.phone-lan {
+    flex-basis: 50%;
+    text-align: right;
+    color: #7A7A7A;
+}
+
+.phone-lan ul li {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.phone-lan ul li:first-child{
+    cursor:text;
+}
+
+.phone-lan ul li p span {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+
 }
