@@ -83,7 +83,7 @@ body{
 /* ---------------------- nav section --------------------------------- */
 
 nav {
-    padding: 10px 0px;
+    padding: 15px 0px;
     background-color: #F5F6F2;
     display: flex;
     justify-content: space-between;
@@ -132,4 +132,94 @@ nav {
     font-weight: 700;
     font-size: 16px;
 
+}
+
+/* ------------------------logo -nav section ---------------------------- */
+#logo-nav-section {
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------------logo section------------------- */
+.logo {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo .image {
+    width: 80%;
+}
+
+.logo .image img {
+    width: 100%;
+}
+
+/* --------------------navigation section------------------ */
+.navigation {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .out-ul {
+    display: flex;
+    position: relative;
+}
+.navigation .out-ul .out-li {
+    list-style: none;
+    padding: 20px 35px 20px 10px;
+}
+
+.navigation .out-ul .out-li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.navigation .out-ul .out-li:hover>a {
+    color: #F37A78;
+}
+
+.navigation .out-ul .out-li>a>i {
+    font-size: 12px;
+}
+
+.navigation .out-ul .ins-ul{
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 2px 7px 2px rgba(0, 0, 0, 0.37);
+    top: 100%;
+    overflow: hidden;
+}
+.navigation .out-ul .ins-ul::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+}
+
+.navigation .ins-ul .ins-li {
+    list-style: none;
+    padding: 15px 90px 15px 15px;
+    border-top: 1px solid rgba(128, 128, 128, 0.386);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.387);
+    font-size: 14px;
+}
+
+.navigation .ins-ul .ins-li>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------------------account and cart section -------------------- */
+.cart-search {
+    flex-basis: 20%;
 }
