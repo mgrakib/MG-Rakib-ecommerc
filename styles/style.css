@@ -313,10 +313,70 @@ nav {
     color: #636362;
 }
 
-/* ___git done------ */
 /* --------------------------- sid bar and hero section ----------------------- */
 
 #content {
-    width: 100px;
+    width: 100%;
     height: 100vh;
+}
+
+
+#sidbar-section {
+    flex-basis: 20%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#sidbar-section .out-ul .out-li {
+    list-style: none;
+    padding: 13px 25px;
+    background-color: #F5F6F1;
+    font-size: 16px;
+}
+
+#sidbar-section .out-ul .out-li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    transition: all .3s linear;
+}
+
+#sidbar-section .out-ul .out-li a span{
+    
+    color: rgba(128, 128, 128, 0.269);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    transition: all 0.3s linear;
+}
+
+#sidbar-section .out-ul .out-li a:hover p{
+    text-decoration: underline;
+}
+
+#sidbar-section .out-ul .out-li a:hover span i{
+    color: black;
+    text-decoration: double;
+}
+
+
+
+#sidbar-section .out-ul .header-li {
+    background-color: #E7E8E0;
+    padding: 15px 25px;
+    font-size: 16px;
+    
+}
+
+
+#sidbar-section .out-ul .header-li a{
+    margin-right: 20px;
+    font-weight: 700;
+    
+}
+#sidbar-section .out-ul .header-li a span{
+    color: black;
+    
 }
