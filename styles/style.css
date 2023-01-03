@@ -163,6 +163,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .navigation .out-ul {
@@ -202,7 +203,7 @@ nav {
     opacity: 0;
     transition: all .2s linear;
 }
-.navigation .out-ul .out-li:hover .ins-ul{
+.navigation .out-ul .out-li:hover .ins-ul, .navigation .out-ul .out-li:hover .shop-insid-row{
     opacity: 1;
 }
 
@@ -228,6 +229,61 @@ nav {
     text-decoration: none;
     color: black;
 }
+
+.out-li .shop-insid-row {
+    display: flex;
+    position: absolute;
+    width: 130%;
+    background-color: white;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 15px 15px;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+    top: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+
+.out-li .shop-insid-row::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #EE403D;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.shop-insid-row .shop-ins-ul {
+    list-style: none;
+    padding: 0 70px 0 10px;
+    margin: 0 10px;
+}
+
+.shop-insid-row .shop-ins-ul .shop-ins-li {
+    padding: 10px 0;
+}
+.shop-insid-row .shop-ins-ul .shop-ins-li a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s linear;
+    font-weight: 500;
+    font-size: 14px;
+}
+.shop-insid-row .shop-ins-ul .shop-ins-li:hover a {
+    color: #EE403D;
+}
+
+
+
+
+
+
 
 /* ---------------------account and cart section -------------------- */
 .cart-search {
