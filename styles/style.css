@@ -151,10 +151,14 @@ nav {
 
 .logo .image {
     width: 80%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .logo .image img {
     width: 100%;
+    
 }
 
 /* --------------------navigation section------------------ */
@@ -172,7 +176,7 @@ nav {
 }
 .navigation .out-ul .out-li {
     list-style: none;
-    padding: 20px 35px 20px 10px;
+    padding: 30px 35px 30px 10px;
 }
 
 .navigation .out-ul .out-li .active{
@@ -291,4 +295,28 @@ nav {
 /* ---------------------account and cart section -------------------- */
 .cart-search {
     flex-basis: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.cart-search .search-cart {
+    width: 40px;
+    height: 40px;
+    background-color: #F5F6F2;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #636362;
+}
+
+
+/* --------------------------- sid bar and hero section ----------------------- */
+
+#content {
+    width: 100px;
+    height: 100vh;
 }
