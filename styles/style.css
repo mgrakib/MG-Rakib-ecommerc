@@ -202,9 +202,11 @@ nav {
     overflow: hidden;
     opacity: 0;
     transition: all .2s linear;
+    visibility: hidden;
 }
 .navigation .out-ul .out-li:hover .ins-ul, .navigation .out-ul .out-li:hover .shop-insid-row{
     opacity: 1;
+    visibility: visible;
 }
 
 
@@ -244,6 +246,7 @@ nav {
     top: 100%;
     overflow: hidden;
     opacity: 0;
+    visibility: hidden;
     transition: all .2s linear;
 }
 
