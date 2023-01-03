@@ -201,11 +201,9 @@ nav {
     overflow: hidden;
     opacity: 0;
     transition: all .2s linear;
-    height: 8px;
 }
 .navigation .out-ul .out-li:hover .ins-ul{
     opacity: 1;
-    height: 468px;
 }
 
 
