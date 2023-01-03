@@ -19,24 +19,49 @@ body{
     padding: 10px 0;
     background-color: #EE403D;
     color: white;
+    position: relative;
+}
+
+.top::after {
+    font-family: "Font Awesome 5 Brands"; 
+    content: "\f104";
+    right: 10px;
+    position: absolute;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+
+.top::before{
+    font-family: "Font Awesome 5 Brands"; 
+    content: "\f104";
+    left: 10px;
+    position: absolute;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+.top:hover::before, .top:hover::after {
+    visibility: visible;
 }
 
 .top .discount-add {
     margin-left: auto;
     line-height: 16px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .top .shoping {
     margin-right: auto;
     border-left: 1px solid white;
     line-height: 16px;
-    padding: 0 20px;
+    padding: 0 10px;
     cursor: pointer;
 }
 .top .shoping a {
     color: white;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .top .shoping:hover{
